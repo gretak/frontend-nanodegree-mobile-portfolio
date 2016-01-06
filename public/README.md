@@ -72,12 +72,15 @@ Feeling uninspired by the portfolio? Here's a list of cool portfolios I found af
 * <a href="http://www.roxannecook.com/">http://www.roxannecook.com/</a>
 * <a href="http://www.84colors.com/portfolio.html">http://www.84colors.com/portfolio.html</a>
 
-
+----------------------
 FOR VIEWER:
 ####Part 1: Optimize PageSpeed Insights score for index.html
-where are two code directories in my repository - source and public. Source contains the original files and public contains modified files. For the first part of the project (index.html) I included changed, but not minified index.html into source directory for viewer to be clear what changes I did make (I assumed to read minified file is to hard also you can find original code is forked from github repository).
+Where are two code directories in my repository - source and public. Source contains the original files and public contains modified files. For the first part of the project (index.html) I included changed, but not minified index.html into source directory for viewer to be clear what changes I did make (I assumed to read minified file is to hard also you can find original code is forked from github repository).
 PageSpeed shows me 93/100 and 91/100 scores for index.html page when using ngrok. Steps I did for reaching this score are:
 optimissing images, minifying files, adding css inline, add "async" to js files, add "print" media for css file, put google font script at the end of page.
 
 ####Part 2: Optimize Frames per Second in pizza.html
+I was using chrome developer tool - timing to measure the FPS and optimise. Same as part one source code contains changed, but not minified pizza.html and main.js file. At the moment it shows that average FPS is 60 and Average time to generate last 10 frames is around 0,1-0,3. Steps I did to inscrease FPS in main.js:
+optimise images, minifying files, fixed updatePositions and changePizzaSizes functions: cleaned the loops and reduced the number of pizzas from 200 to the number based on screen size. Also replaced querySelectorAll to getElementsByClassName where possible.
 
+Thank you!
