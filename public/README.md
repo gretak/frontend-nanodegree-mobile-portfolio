@@ -81,6 +81,6 @@ optimissing images, minifying files, adding css inline, add "async" to js files,
 
 ####Part 2: Optimize Frames per Second in pizza.html
 I was using chrome developer tool - timing to measure the FPS and optimise. Same as part one source code contains changed, but not minified pizza.html and main.js file. At the moment it shows that average FPS is 60 and Average time to generate last 10 frames is around 0,1-0,3. Steps I did to inscrease FPS in main.js:
-optimise images, minifying files, fixed updatePositions and changePizzaSizes functions: cleaned the loops and reduced the number of pizzas from 200 to the number based on screen size. Also replaced querySelectorAll to getElementsByClassName where possible.
+optimise images, minifying files, fixed updatePositions and changePizzaSizes functions: cleaned the loops and reduced the number of pizzas from 200 to the number based on screen size. Also replaced querySelectorAll to getElementsByClassName and querySelecor to getElementById, removed variables from the loop where possible.
 
 Thank you!
